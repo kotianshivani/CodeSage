@@ -1,0 +1,2 @@
+vectorstore_full_SE_RAG/** filter=lfs diff=lfs merge=lfs -text
+docstore_full.pkl filter=lfs diff=lfs merge=lfs -text
