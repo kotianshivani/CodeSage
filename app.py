@@ -17,6 +17,10 @@ from langchain_groq import ChatGroq
 from langchain.vectorstores import FAISS
 from langchain.docstore.document import Document
 import pickle
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 
 # Initialize session state variables
 if 'cache_hits' not in st.session_state:

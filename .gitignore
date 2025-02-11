@@ -27,8 +27,8 @@ wheels/
 data/
 semantic_cache.pkl
 *cache.pkl
-vectorstore_full_SE_RAG/
-docstore_full.pkl
+# vectorstore_full_SE_RAG/
+# docstore_full.pkl
 
 # IDE
 .idea/
