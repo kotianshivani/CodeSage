@@ -37,6 +37,7 @@ Answer - False
 Answer - True
 
 ## Technical Architecture 
+```mermaid
 graph LR
     A[User Question] --> B(Semantic Cache)
     B -- Cache Hit --> C[Instant Response]
@@ -44,7 +45,7 @@ graph LR
     D --> E[Document Store Lookup]
     E --> F[Groq LLM Synthesis]
     F --> G[Response]
-
+```
 
 ## Live Demo
 https://codesage.streamlit.app/
