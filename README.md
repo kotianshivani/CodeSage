@@ -17,9 +17,9 @@ A Streamlit-based question-answering system that uses RAG (Retrieval-Augmented G
 
 - Python 3.8+
 - OpenAI API key (for embeddings only) - https://platform.openai.com/api-keys
+    - OPENAI_API_KEY = "sk-your-openai-key"  # Only for embeddings
 - Groq API key (free tier available) - https://console.groq.com/keys
-OPENAI_API_KEY = "sk-your-openai-key"  # Only for embeddings
-GROQ_API_KEY = "gsk-your-groq-key"    # Free tier available
+    - GROQ_API_KEY = "gsk-your-groq-key"    # Free tier available
 
 
 ## Setup and Installation
@@ -28,13 +28,13 @@ GROQ_API_KEY = "gsk-your-groq-key"    # Free tier available
 3. Add your API keys to Streamlit secrets
 4. Run the app: `streamlit run app.py`
 5. Ask questions through the web interface:
-example - 
-1. The probability of failure on demand (POFOD) for service from a system is 0.008 means that there is a __________ chance that a failure will occur when a demand is made.
-Answer - 0.008
-2. You can simply estimate the number of people required for a project team by dividing the total effort by the required project schedule. true or false?
-Answer - False
-3. Sociotechnical systems are so complex that it is impossible to understand them as a whole.
-Answer - True
+- example :
+    - 1. The probability of failure on demand (POFOD) for service from a system is 0.008 means that there is a __________ chance that a failure will occur when a demand is made.
+        - Answer - 0.008
+    - 2. You can simply estimate the number of people required for a project team by dividing the total effort by the required project schedule. true or false?
+        - Answer - False
+    - 3. Sociotechnical systems are so complex that it is impossible to understand them as a whole.
+        - Answer - True
 
 ## Technical Architecture 
 ```mermaid
