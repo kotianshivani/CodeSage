@@ -18,14 +18,13 @@ from base64 import b64decode
 from dotenv import load_dotenv
 import os
 # from langchain_groq import ChatGroq
-#from langchain_groq.chat_models import ChatGroq
+from langchain_groq.chat_models import ChatGroq
 
 # from langchain.vectorstores import FAISS
 from langchain_community.vectorstores import FAISS
 from langchain.docstore.document import Document
 import pickle
-from langchain_groq import ChatGroq
-ChatGroq.model_rebuild()
+#from langchain_groq import ChatGroq
 # ChatGroq.model_rebuild()
 
 # Initialize session state variables
