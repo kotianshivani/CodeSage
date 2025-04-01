@@ -2,7 +2,8 @@ __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import streamlit as st
-from langchain_community.vectorstores import Chroma
+# from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_openai import ChatOpenAI
@@ -17,12 +18,14 @@ from base64 import b64decode
 from dotenv import load_dotenv
 import os
 # from langchain_groq import ChatGroq
-from langchain_groq.chat_models import ChatGroq
+#from langchain_groq.chat_models import ChatGroq
 
 # from langchain.vectorstores import FAISS
 from langchain_community.vectorstores import FAISS
 from langchain.docstore.document import Document
 import pickle
+from langchain_groq import ChatGroq
+ChatGroq.model_rebuild()
 # ChatGroq.model_rebuild()
 
 # Initialize session state variables
