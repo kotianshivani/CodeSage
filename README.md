@@ -37,6 +37,7 @@ Answer - False
 Answer - True
 
 ## Technical Architecture 
+```
 graph LR
 A[User Question] --> B(Semantic Cache)
 B -- Cache Hit --> C[Instant Response]
@@ -44,6 +45,7 @@ B -- Cache Miss --> D[ChromaDB Vector Store]
 D --> E[Document Store Lookup]
 E --> F[Groq LLM Synthesis]
 F --> G[Response]
+```
 
 
 ## Live Demo
