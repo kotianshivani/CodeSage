@@ -45,7 +45,8 @@ B -- Cache Miss --> D[ChromaDB Vector Store]
 D --> E[Document Store Lookup]
 E --> F[Groq LLM Synthesis]
 F --> G[Response]
-mermaid```
+mermaid
+```
 
 ## Live Demo
 https://codesage.streamlit.app/
