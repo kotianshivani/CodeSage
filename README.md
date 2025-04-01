@@ -38,19 +38,13 @@ Answer - True
 
 ## Technical Architecture 
 ```
----
-config:
-  layout: fixed
-  theme: dark
----
-flowchart LR
-    A["User Question"] --> B("Semantic Cache")
-    B -- Cache Hit --> C["Instant Response"]
-    B -- Cache Miss --> D["ChromaDB Vector Store"]
-    D --> E["Document Store Lookup"]
-    E --> F["Groq LLM Synthesis"]
-    F --> G["Response"]
-
+graph LR
+A[User Question] --> B(Semantic Cache)
+B -- Cache Hit --> C[Instant Response]
+B -- Cache Miss --> D[ChromaDB Vector Store]
+D --> E[Document Store Lookup]
+E --> F[Groq LLM Synthesis]
+F --> G[Response]
 ```
 
 ## Live Demo
